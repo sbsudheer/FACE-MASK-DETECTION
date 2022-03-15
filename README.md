@@ -46,6 +46,7 @@ Preprocessing: For the facial recognition model of people using a face mask, onl
 Characteristics extraction: The FaceNet model is used to extract the most essential characteristics of the face. This model extracts the most essential features from the input image, in this case a face, and returns a vector of 128 features. The input of the network is an image with a human face and, using a deep metric learning technique, it calculates the metric to generate vectors of real characteristics 
 
 APPLICATION OF FACE MASK DETECTION SYSTEM
+
 Once the facial recognition models have been trained, they are applied following the results obtained in the second stage. In this way, in addition to defining whether or not the person uses the biosafety material, it is possible to know their identity. This as long as the face is within the selected database. These obtained models are applied to the previously identified faces, and a label is returned with the name and the probability of a match in the face.
 
 ![image](https://user-images.githubusercontent.com/101164581/158312992-4201be9c-8487-43e6-a07b-4813a0b2d894.png)
