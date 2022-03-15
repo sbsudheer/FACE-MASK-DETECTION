@@ -26,7 +26,8 @@ SECOND STAGE
 This is where the classifier training is performed to detect faces with a mask and without a mask.
 ![image](https://user-images.githubusercontent.com/101164581/158309807-dcfe19a2-fc86-49fa-9372-b6aa921968a0.png)Classifier training block diagram.
 
-For the classifier, MobileNet V2 architecture is used, as it uses smaller models with a low latency and low parameterization power. 
+For the classifier, MobileNet V2 architecture is used, as it uses smaller models with a low latency and low parameterization power.
+
 ![image](https://user-images.githubusercontent.com/101164581/158310298-8103165e-def5-4fbd-b046-333b3b2774e1.png)Architecture of MobileNetV2.
 
 THIRD STAGE
