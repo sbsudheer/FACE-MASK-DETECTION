@@ -36,3 +36,15 @@ Once the face of the person has been identified, in the third stage, facial reco
 Set of observations using a face mask
 ![image](https://user-images.githubusercontent.com/101164581/158310675-35d9bdd7-9f93-4269-9c58-b87e148ec9b5.png)
 Set of observations without using a face mask.
+
+FEATURES
+
+Database: Set of observations of the faces of people using a mask and without using a mask for both approaches of the third stage.
+
+Preprocessing: For the facial recognition model of people using a face mask, only 3/5 of the upper part of the face is extracted. This in order to discriminate the mask that the person is using (as in the experimental tests, this information is not useful for the recognition model). Whereas, for the facial recognition model without a face mask, the image of the full face is used. 
+
+Characteristics extraction: The FaceNet model is used to extract the most essential characteristics of the face. This model extracts the most essential features from the input image, in this case a face, and returns a vector of 128 features. The input of the network is an image with a human face and, using a deep metric learning technique, it calculates the metric to generate vectors of real characteristics 
+
+Once the facial recognition models have been trained, they are applied following the results obtained in the second stage. In this way, in addition to defining whether or not the person uses the biosafety material, it is possible to know their identity. This as long as the face is within the selected database. These obtained models are applied to the previously identified faces, and a label is returned with the name and the probability of a match in the face.
+![image](https://user-images.githubusercontent.com/101164581/158312992-4201be9c-8487-43e6-a07b-4813a0b2d894.png)
+Block diagram of the implemented face recognition system.
