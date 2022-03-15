@@ -18,10 +18,10 @@ This stage focuses on finding the location and dimension of one or more faces, r
 
 
 This is where the classifier training is performed to detect faces with a mask and without a mask.
-![image](https://user-images.githubusercontent.com/101164581/158309807-dcfe19a2-fc86-49fa-9372-b6aa921968a0.png)
+![image](https://user-images.githubusercontent.com/101164581/158309807-dcfe19a2-fc86-49fa-9372-b6aa921968a0.png)Classifier training block diagram.
 
 For the classifier, MobileNet V2 architecture is used, as it uses smaller models with a low latency and low parameterization power. 
-![image](https://user-images.githubusercontent.com/101164581/158310298-8103165e-def5-4fbd-b046-333b3b2774e1.png)
+![image](https://user-images.githubusercontent.com/101164581/158310298-8103165e-def5-4fbd-b046-333b3b2774e1.png)Architecture of MobileNetV2.
 
 Once the face of the person has been identified, in the third stage, facial recognition is carried out, for which a set of own observations is used that is built based on the faces of various people. For the construction of the set of observations, a balance is sought in terms of gender, namely, five women and five men from whom the images are obtained
 ![image](https://user-images.githubusercontent.com/101164581/158310636-8c484cd1-e380-45d3-9d1e-c515f88412be.png)
