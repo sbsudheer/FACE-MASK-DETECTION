@@ -32,6 +32,7 @@ For the classifier, MobileNet V2 architecture is used, as it uses smaller models
 THIRD STAGE
 
 Once the face of the person has been identified, in the third stage, facial recognition is carried out, for which a set of own observations is used that is built based on the faces of various people. For the construction of the set of observations, a balance is sought in terms of gender, namely, five women and five men from whom the images are obtained
+
 ![image](https://user-images.githubusercontent.com/101164581/158310636-8c484cd1-e380-45d3-9d1e-c515f88412be.png)
 Set of observations using a face mask
 ![image](https://user-images.githubusercontent.com/101164581/158310675-35d9bdd7-9f93-4269-9c58-b87e148ec9b5.png)
